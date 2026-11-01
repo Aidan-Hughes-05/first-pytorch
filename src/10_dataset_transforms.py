@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 import torchvision
-from torch.utils.data import DataLoader, Dataset
+from torch.utils.data import Dataset
 
 
 class WineDataset(Dataset):

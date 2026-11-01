@@ -44,3 +44,5 @@ htmlcov/
 .DS_Store
 .AppleDouble
 .LSOverride
+
+data/
