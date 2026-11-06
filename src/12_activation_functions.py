@@ -1,6 +1,5 @@
-import numpy as np
-import torch
 from torch import nn
+
 
 class NeuralNet(nn.Module):
     def __init__(self, input_size, hidden_size):

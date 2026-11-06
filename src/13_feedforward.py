@@ -9,9 +9,9 @@ print(f"Using {device} device")
 
 # hyper parameters 
 input_size = 784 # 28x28
-hidden_size = 100
+hidden_size = input_size//2
 num_classes = 10
-num_epochs = 2
+num_epochs = 20
 batch_size = 100
 learning_rate = 0.001
 
@@ -39,7 +39,7 @@ class NeuralNet(nn.Module):
     def __init__(self, input_size, hidden_size, num_classes):
         super().__init__()
         self.l1 = nn.Linear(input_size, hidden_size, device=device)
-        self.relu = nn.ReLU()
+        self.relu = nn.LeakyReLU()
         self.l2 = nn.Linear(hidden_size, num_classes, device=device)
 
     def forward(self, x):
